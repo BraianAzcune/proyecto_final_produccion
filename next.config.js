@@ -6,7 +6,7 @@ module.exports = {
   reactStrictMode: true,
   //distDir: 'build',
   webpack: (config, {  }) => {
-
+    // config.output.hashFunction = 'sha512';
     config.resolve.extensions.push(".ts", ".tsx");
     config.resolve.fallback = { fs: false };
 
